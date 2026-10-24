@@ -1,0 +1,16 @@
+{
+  "name": "mathe-ai-showreel",
+  "private": true,
+  "description": "THE BLANK: a 15 s looping motion showreel for mathe_ai, rendered from one HTML file",
+  "scripts": {
+    "build": "node build.js",
+    "stills": "node render.js stills out/beats 6",
+    "audio": "node render.js audio out/mathe_ai.wav",
+    "video": "node render.js video out/mathe_ai.mp4 out/mathe_ai.wav 4"
+  },
+  "dependencies": {
+    "geist": "^1.8.2",
+    "opentype.js": "^2.0.0",
+    "playwright": "^1.63.0"
+  }
+}
