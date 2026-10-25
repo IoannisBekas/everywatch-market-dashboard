@@ -33,6 +33,17 @@ effectcraft-cli render anyone-can.ecproj --comp Main --out anyone-can-effectcraf
 `anyone-can.ecproj` is the generated project, ready to open in the EffectCraft app. It references
 `anyone-can-mix.wav` next to it.
 
+## Open it in EffectCraft
+
+1. Install EffectCraft 0.16 or newer from [getartcraft.com](https://getartcraft.com/apps/effectcraft)
+   or the [GitHub releases](https://github.com/storytold/effectcraft/releases).
+2. Run `./fonts.sh` and install the TTFs it puts in `fonts/`. On Linux you can instead launch with
+   `EFFECTCRAFT_FONT_DIRS=$PWD/fonts effectcraft anyone-can.ecproj`.
+3. Open `anyone-can.ecproj` with `anyone-can-mix.wav` beside it. It opens on the `Main` comp, and each
+   section is a nested comp (`01 Hook` … `07 End`).
+
+The web build of EffectCraft only has its bundled fonts (no system fonts), so use the desktop app.
+
 ## Notes from building it
 
 - `layer.property("Position")` on a shape layer resolves to the first content group's Position.
