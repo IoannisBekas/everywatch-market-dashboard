@@ -35,3 +35,9 @@ npm run build
 npm run stills -- 0.3 0.8 1.3      # any times, one PNG each
 npm run audio && npm run video     # needs ffmpeg on PATH
 ```
+
+## Lesson 01: "AI για κάθε μέρα"
+
+A 30 s lesson promo in Greek that teaches students how to use AI every day, built and rendered in
+EffectCraft from [`PROMPT-everyday-ai.md`](PROMPT-everyday-ai.md). The script, soundtrack, project and
+render are in [`lesson-01/`](lesson-01/).
